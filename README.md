@@ -1,3 +1,4 @@
+# Hexag-OS_server
 
 **Hexag-OS_server** est un système d'exploitation serveur personnalisé développé pour offrir une solution robuste de gestion de serveurs avec des fonctionnalités avancées de virtualisation. Ce projet inclut un noyau personnalisé, un gestionnaire de paquets, et des outils de configuration pour une administration efficace et sécurisée.
 
