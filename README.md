@@ -28,12 +28,26 @@ HexagOS/
 │   │   ├── classic_driver.py         # Gestionnaire des tâches classiques
 │   │   ├── memory_manager.py         # Gestion de la mémoire des qubits
 │   │   └── security.py               # Sécurisation des tâches
-│   ├── api/
+│   |
+|   ├── api/
 │   │   └── hybrid_api.py             # Interface API pour interagir avec le noyau
-│   ├── cli/
+│   |
+|   ├── cli/
 │   │   └── hexag_cli.py              # Interface utilisateur en ligne de commande
-│   ├── tests/                        # Dossier des tests unitaires
+│   |
+|   ├── tests/                        # Dossier des tests unitaires
 │   └── utils.py                      # Fonctions utilitaires (logs, etc.)
+|
+├── deploy/
+│   └── kubernetes/               # Fichiers de configuration Kubernetes pour le déploiement
+│       └── deployment.yaml        # Déploiement Kubernetes
+|
+├── .github/                       # Configuration GitHub Actions pour CI/CD
+│   └── workflows/
+│       └── ci.yml                 # Pipeline CI/CD avec GitHub Actions
+|
+├── Dockerfile                     # Fichier Docker pour Hexag OS
+├── requirements.txt               # Dépendances Python
 ├── docs/                             # Documentation du projet
 ├── requirements.txt                  # Fichier des dépendances
 └── README.md                         # Explication du projet
