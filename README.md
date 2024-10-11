@@ -48,3 +48,17 @@ Le planificateur est au cœur du système **Hexag OS**. Il gère la répartition
 - **Répartition des tâches** : Assigne dynamiquement les tâches aux processeurs classiques ou quantiques en fonction de la nature des calculs à effectuer.
 - **Optimisation des ressources** : Utilise des algorithmes d'optimisation pour minimiser le temps de traitement global.
 - **Suivi des tâches** : Gère l'état d'exécution des tâches, surveille leur progression et récupère les résultats.
+
+## Sécurisation de l'ordonnancement des tâches
+
+### Utilisation de mécanismes de verrouillage
+
+Pour éviter les conflits lors de l'accès simultané aux files d'attente des tâches, il est essentiel d'utiliser des mécanismes de verrouillage. La gestion des tâches dans un environnement multi-threadé ou multi-utilisateur peut introduire des conditions de course, où plusieurs processus ou utilisateurs tentent d'accéder aux ressources en même temps. Ce verrouillage garantit que chaque tâche est correctement ajoutée ou planifiée sans risque de conflit.
+
+### Objectifs de la sécurisation
+
+- **Prévention des conditions de course** : Assurer que deux tâches ne modifient pas simultanément une même file d'attente ou une même ressource partagée.
+- **Gestion des accès concurrentiels** : Implémenter des mécanismes pour éviter les accès concurrentiels non sécurisés aux files d'attente des tâches.
+- **Assurance de l'intégrité des tâches** : Garantir que les tâches sont ajoutées, exécutées et récupérées dans l'ordre prévu sans interférence.
+
+
