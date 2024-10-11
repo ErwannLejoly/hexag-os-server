@@ -1,42 +1,39 @@
-# Hexag-OS_server
+# Hexag OS — Noyau Hybride Quantique-Classique
 
-**Hexag-OS_server** est un système d'exploitation serveur personnalisé développé pour offrir une solution robuste de gestion de serveurs avec des fonctionnalités avancées de virtualisation. Ce projet inclut un noyau personnalisé, un gestionnaire de paquets, et des outils de configuration pour une administration efficace et sécurisée.
+**Hexag OS** est un projet innovant visant à créer un noyau hybride combinant des fonctionnalités classiques basées sur des CPU avec des capacités quantiques utilisant des qubits. Ce noyau est conçu pour s'intégrer facilement avec des systèmes Linux existants, tout en permettant de soumettre des tâches quantiques à des simulateurs ou à du matériel quantique réel.
 
-## Table des Matières
+## Fonctionnalités principales
 
-- [Présentation](#présentation)
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Utilisation](#utilisation)
-- [Sécurité](#sécurité)
-- [Maintenance](#maintenance)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- **Hybridation Quantique-Classique** : Combinaison des capacités de calcul classiques (processeurs) et quantiques (qubits) au sein d'un même noyau.
+- **Compatibilité Linux** : Conçu pour fonctionner avec des systèmes Linux déjà en place.
+- **Accès au Matériel Quantique** : Support pour soumettre des tâches à des simulateurs ou à des processeurs quantiques réels.
 
-## Présentation
+## Objectifs du Projet
 
-Hexag-OS_server vise à fournir une plateforme serveur flexible et sécurisée avec les caractéristiques suivantes :
+- Offrir un cadre flexible pour l'exécution de tâches combinant des algorithmes classiques et quantiques.
+- Permettre aux développeurs et chercheurs de tester et déployer des algorithmes quantiques dans un environnement familier et accessible.
+- Faciliter l'adoption des technologies quantiques grâce à une intégration fluide avec les outils de développement existants.
 
-- **Noyau Personnalisé** : Optimisé pour la gestion multi-cœurs et la virtualisation.
-- **Gestion des Paquets** : Un gestionnaire de paquets personnalisé, `hexag-apt`, pour gérer l'installation et les mises à jour des logiciels.
-- **Virtualisation KVM** : Support complet pour la création et la gestion de machines virtuelles avec une option de configuration DRBD.
-- **Gestion des Utilisateurs** : Utilisation de sudo pour une gestion des permissions sécurisée, avec désactivation du compte root par défaut.
 
-## Prérequis
+## Étape 1 : Création de la structure du projet
+### Structure du projet
 
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-
-- Un système Ubuntu ou Debian à jour.
-- Privilèges root ou sudo pour l'installation et la configuration.
-- `git` pour cloner le dépôt.
-
-## Installation
-
-1. **Clonez le dépôt Git** :
-
-   ```sh
-   git clone https://github.com/ErwannLejoly/hexag-os-server.git
-   cd hexag-os-server
-
-   cd hexag-os_server
+```bash
+HexagOS/
+│
+├── src/
+│   ├── core/
+│   │   ├── hybrid_scheduler.py       # Planificateur de tâches
+│   │   ├── quantum_driver.py         # Gestionnaire des tâches quantiques
+│   │   ├── classic_driver.py         # Gestionnaire des tâches classiques
+│   │   ├── memory_manager.py         # Gestion de la mémoire des qubits
+│   │   └── security.py               # Sécurisation des tâches
+│   ├── api/
+│   │   └── hybrid_api.py             # Interface API pour interagir avec le noyau
+│   ├── cli/
+│   │   └── hexag_cli.py              # Interface utilisateur en ligne de commande
+│   ├── tests/                        # Dossier des tests unitaires
+│   └── utils.py                      # Fonctions utilitaires (logs, etc.)
+├── docs/                             # Documentation du projet
+├── requirements.txt                  # Fichier des dépendances
+└── README.md                         # Explication du projet
