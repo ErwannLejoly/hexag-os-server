@@ -88,3 +88,41 @@ Une API permet aux utilisateurs ou aux développeurs d'interagir avec **Hexag OS
 - **Récupération des résultats** : Permet d'obtenir les résultats des tâches exécutées sur les processeurs classiques ou quantiques.
 - **Surveillance des ressources** : Permet de vérifier l'état actuel des ressources, telles que la mémoire des qubits et la charge des processeurs.
 
+## Étape 6 : Interface utilisateur en ligne de commande (CLI)
+
+### Pourquoi cette étape ?
+
+Une interface CLI permet aux utilisateurs d'interagir facilement avec **Hexag OS** sans avoir à utiliser des scripts ou à entrer dans le code source. Elle simplifie l'utilisation du système en offrant des commandes intuitives pour soumettre des tâches, surveiller l'état du système, et récupérer les résultats sans avoir besoin d'une interface graphique complexe.
+
+### Fonctionnalités principales de la CLI
+
+- **Soumission de tâches** : Soumettre des tâches classiques et quantiques via des commandes simples.
+- **Surveillance du système** : Vérifier l'utilisation des ressources et l'état des qubits.
+- **Récupération des résultats** : Obtenir les résultats des tâches exécutées directement dans le terminal.
+
+---
+
+## Étape 7 : Sécurisation supplémentaire
+
+
+
+La sécurité des tâches et des communications est primordiale, en particulier dans un environnement hybride classique-quantique où des données sensibles peuvent être traitées. Renforcer la sécurité permet de garantir la confidentialité et l'intégrité des données tout au long de leur traitement et de leur transmission entre les composants du système.
+
+### Mesures de sécurité supplémentaires
+
+- **Chiffrement des communications entre les composants** : Utilisation de la bibliothèque `pycryptodome` pour chiffrer les données transmises entre les différents composants du système, garantissant ainsi leur confidentialité.
+- **Vérification des entrées utilisateur** : Mise en place de filtres pour éviter l'exécution de commandes dangereuses ou non sécurisées à travers les entrées utilisateur, réduisant ainsi les risques d'injections ou d'autres vulnérabilités.
+
+---
+
+## Étape 8 : Tests unitaires
+
+
+
+Les tests unitaires garantissent que chaque composant du système fonctionne correctement de manière isolée. Ils permettent de vérifier que les différentes parties d'**Hexag OS** (planificateur, gestionnaire de mémoire, API, etc.) respectent leurs spécifications et que les modifications du code n'introduisent pas de nouvelles erreurs.
+
+### Fonctionnalités principales des tests
+
+- **Isolation des composants** : Chaque composant est testé de manière indépendante pour s'assurer qu'il fonctionne sans dépendre des autres.
+- **Détection des erreurs** : Les tests permettent de détecter les erreurs potentielles dans le code avant de les déployer en production.
+- **Maintenance continue** : Facilite la maintenance à long terme du projet en validant que les mises à jour ne cassent pas les fonctionnalités existantes.
