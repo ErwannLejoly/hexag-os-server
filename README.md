@@ -61,4 +61,15 @@ Pour éviter les conflits lors de l'accès simultané aux files d'attente des t�
 - **Gestion des accès concurrentiels** : Implémenter des mécanismes pour éviter les accès concurrentiels non sécurisés aux files d'attente des tâches.
 - **Assurance de l'intégrité des tâches** : Garantir que les tâches sont ajoutées, exécutées et récupérées dans l'ordre prévu sans interférence.
 
+## Étape 3 : Gestionnaire des tâches classiques et quantiques
+
+### Pourquoi cette étape ?
+
+Il est nécessaire de créer des composants distincts pour gérer l'exécution des tâches classiques et quantiques, chacun ayant des contraintes et des méthodes d'exécution différentes. Les tâches classiques sont exécutées directement sur le CPU, tandis que les tâches quantiques doivent être compilées et envoyées à un simulateur ou à un matériel quantique réel.
+
+### Fonctionnalités principales
+
+- **Gestion des tâches classiques** : Exécution directe des calculs sur les processeurs classiques en utilisant des algorithmes traditionnels.
+- **Gestion des tâches quantiques** : Compilation des algorithmes quantiques et envoi vers des simulateurs ou des processeurs quantiques réels.
+- **Séparation des responsabilités** : Création de modules spécifiques pour chaque type de tâche, garantissant une meilleure organisation et une gestion optimisée des ressources.
 
