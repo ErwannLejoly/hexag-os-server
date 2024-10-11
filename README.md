@@ -73,3 +73,9 @@ Il est nécessaire de créer des composants distincts pour gérer l'exécution d
 - **Gestion des tâches quantiques** : Compilation des algorithmes quantiques et envoi vers des simulateurs ou des processeurs quantiques réels.
 - **Séparation des responsabilités** : Création de modules spécifiques pour chaque type de tâche, garantissant une meilleure organisation et une gestion optimisée des ressources.
 
+## Étape 4 : Gestion de la mémoire quantique
+
+### Pourquoi cette étape ?
+
+La gestion de la mémoire quantique, en particulier l'allocation et la libération des qubits, est cruciale pour éviter les conflits de ressources. Une gestion efficace permet d'assurer que les tâches quantiques sont exécutées correctement sans rencontrer de limitations liées à la disponibilité des qubits.
+Une gestion optimale des qubits permet d'éviter des blocages ou des erreurs de ressources insuffisantes lorsque plusieurs tâches quantiques sont soumises. Cela garantit que chaque tâche dispose des qubits nécessaires à son exécution, tout en assurant une allocation efficace et une libération rapide des qubits une fois leur utilisation terminée.
