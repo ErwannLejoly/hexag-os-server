@@ -77,3 +77,14 @@ Il est nécessaire de créer des composants distincts pour gérer l'exécution d
 
 La gestion de la mémoire quantique, en particulier l'allocation et la libération des qubits, est cruciale pour éviter les conflits de ressources. Une gestion efficace permet d'assurer que les tâches quantiques sont exécutées correctement sans rencontrer de limitations liées à la disponibilité des qubits.
 Une gestion optimale des qubits permet d'éviter des blocages ou des erreurs de ressources insuffisantes lorsque plusieurs tâches quantiques sont soumises. Cela garantit que chaque tâche dispose des qubits nécessaires à son exécution, tout en assurant une allocation efficace et une libération rapide des qubits une fois leur utilisation terminée.
+
+## Étape 5 : API pour Hexag OS
+
+Une API permet aux utilisateurs ou aux développeurs d'interagir avec **Hexag OS** de manière simple et structurée. Elle offre des moyens d'envoyer des tâches au système, de récupérer les résultats, et de surveiller l'état des ressources. Une API bien conçue améliore l'accessibilité du système et facilite son intégration dans des applications et des workflows externes.
+
+### Fonctionnalités principales de l'API
+
+- **Soumission de tâches** : Permet aux utilisateurs de soumettre des tâches classiques ou quantiques au planificateur.
+- **Récupération des résultats** : Permet d'obtenir les résultats des tâches exécutées sur les processeurs classiques ou quantiques.
+- **Surveillance des ressources** : Permet de vérifier l'état actuel des ressources, telles que la mémoire des qubits et la charge des processeurs.
+
