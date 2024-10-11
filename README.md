@@ -37,3 +37,14 @@ HexagOS/
 ├── docs/                             # Documentation du projet
 ├── requirements.txt                  # Fichier des dépendances
 └── README.md                         # Explication du projet
+```
+
+## Étape 2 : Planificateur des tâches hybrides
+
+Le planificateur est au cœur du système **Hexag OS**. Il gère la répartition des tâches entre les processeurs classiques et quantiques. Cette étape est cruciale pour assurer une gestion optimale des ressources et permettre une exécution efficace des algorithmes hybrides, combinant les puissances de calcul classiques et quantiques.
+
+### Fonctionnalités principales du planificateur
+
+- **Répartition des tâches** : Assigne dynamiquement les tâches aux processeurs classiques ou quantiques en fonction de la nature des calculs à effectuer.
+- **Optimisation des ressources** : Utilise des algorithmes d'optimisation pour minimiser le temps de traitement global.
+- **Suivi des tâches** : Gère l'état d'exécution des tâches, surveille leur progression et récupère les résultats.
