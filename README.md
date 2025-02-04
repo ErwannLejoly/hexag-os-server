@@ -83,9 +83,9 @@ from qiskit_ibm_provider import IBMProvider
 IBMProvider.save_account('VOTRE_CLE_API', overwrite=True)
 
 Cette configuration permettra à votre OS d'exécuter des tâches sur un processeur quantique IBM.
+```
 
-✅ Félicitations ! Votre système est maintenant prêt à exploiter la puissance du calcul quantique. 🎉
-
+```bash
 HexagOS/
 │
 ├── src/
