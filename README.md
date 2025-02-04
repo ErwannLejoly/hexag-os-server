@@ -19,6 +19,73 @@
 ### Structure du projet
 
 ```bash
+
+Installation de Qiskit
+
+Prérequis
+
+Avant de commencer, assurez-vous d'utiliser Debian 12 et d'avoir un accès à un terminal avec les droits administrateur.
+
+1. Mise à jour du système
+
+Avant d'installer Qiskit, mettez votre système à jour pour vous assurer que vous disposez des dernières versions des paquets :
+
+sudo apt update && sudo apt upgrade -y
+
+2. Installation de Python et pip
+
+Qiskit nécessite Python 3.8 ou une version ultérieure. Debian 12 inclut déjà Python 3.11, donc nous avons seulement besoin d'installer pip :
+
+sudo apt install python3-pip -y
+
+3. Installation de Qiskit
+
+Installez Qiskit avec la commande suivante :
+
+pip install qiskit
+
+Si vous souhaitez exécuter des circuits quantiques sur un ordinateur quantique réel via IBM Quantum, installez les outils supplémentaires :
+
+pip install qiskit[visualization] qiskit-ibm-provider
+
+4. Vérification de l'installation
+
+Vérifiez que Qiskit est bien installé en exécutant la commande suivante :
+
+python3 -c "import qiskit; print(qiskit.__version__)"
+
+Si Qiskit est correctement installé, vous verrez s'afficher sa version.
+
+Configuration de l'accès aux processeurs quantiques IBM
+
+Qiskit permet d'exécuter des simulations en local, mais aussi d'envoyer des calculs à des processeurs quantiques réels via IBM Quantum.
+
+1. Créer un compte IBM Quantum
+
+Si ce n'est pas encore fait, inscrivez-vous gratuitement sur IBM Quantum.
+
+2. Obtenir une clé API
+
+Une fois connecté à IBM Quantum :
+
+Accédez à "Mon Compte" > "API Keys"
+
+Cliquez sur "Générer une nouvelle clé API"
+
+Copiez la clé API qui vous est fournie
+
+3. Configurer la connexion à IBM Quantum
+
+Dans un terminal Python, exécutez la commande suivante en remplaçant VOTRE_CLE_API par la clé obtenue :
+
+from qiskit_ibm_provider import IBMProvider
+
+IBMProvider.save_account('VOTRE_CLE_API', overwrite=True)
+
+Cette configuration permettra à votre OS d'exécuter des tâches sur un processeur quantique IBM.
+
+✅ Félicitations ! Votre système est maintenant prêt à exploiter la puissance du calcul quantique. 🎉
+
 HexagOS/
 │
 ├── src/
