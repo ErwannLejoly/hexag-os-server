@@ -38,19 +38,7 @@ HexagOS/
 |   ├── tests/                        # Dossier des tests unitaires
 │   └── utils.py                      # Fonctions utilitaires (logs, etc.)
 |
-├── deploy/
-│   └── kubernetes/               # Fichiers de configuration Kubernetes pour le déploiement
-│       └── deployment.yaml        # Déploiement Kubernetes
-|
-├── .github/                       # Configuration GitHub Actions pour CI/CD
-│   └── workflows/
-│       └── ci.yml                 # Pipeline CI/CD avec GitHub Actions
-|
-├── Dockerfile                     # Fichier Docker pour Hexag OS
-├── requirements.txt               # Dépendances Python
-├── docs/                             # Documentation du projet
-├── requirements.txt                  # Fichier des dépendances
-└── README.md                         # Explication du projet
+
 ```
 
 ## Étape 2 : Planificateur des tâches hybrides
